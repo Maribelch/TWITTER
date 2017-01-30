@@ -1,0 +1,37 @@
+body{
+    background-image:url(../img/twitter-140-media.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.app{
+   background:	#87CEFA;
+    height: 55px;
+    border-radius:5px;
+}
+h3{
+    text-align: center;
+     font-family: fantasy;
+    color: aliceblue;
+}
+.checked {
+ list-style: none;
+     padding: 10px;
+    border-bottom: 2px solid #9999FF;
+     background: #87CEFA;
+  text-decoration: line-through;
+    margin-top: 20px;
+}
+
+ .div {
+    
+     background: #87CEFA;
+      height: 50px;
+     border-radius: 7px;
+      padding: 10px;
+     list-style: none;
+     border-bottom: 2px solid #9999FF;
+     margin-top: 20px;
+    }
+
+
+ 
