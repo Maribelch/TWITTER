@@ -1,4 +1,22 @@
-var lista =document.getElementById("lista");
+/*drawTasksList = lista--var listaTareas=[["tarea",true],["t2",false]];*/
+
+var listaTareas = [
+   {nombre:"tarea",isDone:true},
+    {nombre:"t2",isDone:false}
+];
+
+function drawTasksList()
+{
+    var lista=document.getElementById("lista");
+    
+    for(var i in listaTareas){
+        /*var html="<li>"+listaTareas[i]+"</li>";*/
+        var html ="<li><input type='checkbox' " + 
+            (listaTareas[i].isDone?"checked":"") +
+            ">" + listaTareas[i].nombre+"</li>";
+        lista.innerHTML+=html;
+    }
+}
 function agregar()
 {
     var texto=document.getElementById("palabra");
@@ -36,7 +54,7 @@ for (i = 0; i < close.length; i++) {
   }
 }
  
-    //checket
+    
 check.addEventListener('click', function(ev) {
   if (ev.target.checked) {
     ev.target.parentNode.className='checked';
@@ -44,4 +62,43 @@ check.addEventListener('click', function(ev) {
 }, false);
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
